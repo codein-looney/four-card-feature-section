@@ -8,17 +8,68 @@ body {
   background: var(--Very-Light-Gray);
   font-family: "Poppins", sans-serif;
 }
-body main {
-  text-align: center;
-  border: 1px solid red;
-}
 
 .wrapper .grid {
-  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5em;
+  justify-content: center;
+}
+.wrapper .grid .box1, .wrapper .grid .box2, .wrapper .grid .box3, .wrapper .grid .box4 {
+  width: 50%;
+  padding: 1.2em 0 0 1.5em;
+  border-top: 0.2em solid var(--Cyan);
+  border-radius: 0.3em;
+  box-shadow: rgba(33, 14, 205, 0.137) 0px 20px 25px -5px, rgba(59, 21, 198, 0.04) 0px 10px 10px -5px;
+}
+.wrapper .grid .box1 .heading-title, .wrapper .grid .box2 .heading-title, .wrapper .grid .box3 .heading-title, .wrapper .grid .box4 .heading-title {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+}
+.wrapper .grid .box1 .heading-sub-title, .wrapper .grid .box2 .heading-sub-title, .wrapper .grid .box3 .heading-sub-title, .wrapper .grid .box4 .heading-sub-title {
+  font-size: 0.6em;
+  max-width: 80%;
+  color: var(--Grayish-Blue);
+  font-weight: 200;
+}
+.wrapper .grid .box1 img, .wrapper .grid .box2 img, .wrapper .grid .box3 img, .wrapper .grid .box4 img {
+  margin: 2em 1.5em 1.5em 0;
+  width: 3.2em;
+  float: right;
+}
+.wrapper .grid .box2 {
+  border-top: 0.2em solid var(--Red) !important;
+}
+.wrapper .grid .box3 {
+  border-top: 0.2em solid var(--Orange) !important;
+}
+.wrapper .grid .box4 {
+  border-top: 0.2em solid var(--Blue) !important;
 }
 
 .wrapper .header {
-  border: 1px solid red;
+  margin: 5em 0;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.wrapper .header .header-title {
+  font-size: 2.3em;
+  margin-bottom: 0.5em;
+  color: var(--Grayish-Blue);
+  font-weight: 200;
+}
+.wrapper .header .header-title span {
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+}
+.wrapper .header .header-sub-title {
+  max-width: 30%;
+  color: var(--Grayish-Blue);
 }
 
 :root {

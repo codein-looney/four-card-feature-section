@@ -1,3 +1,54 @@
 .wrapper .grid {
-    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5em;
+    justify-content: center;
+
+    .box1, .box2, .box3, .box4 {
+        width: 50%;
+        padding: 1.2em 0 0 1.5em;
+        border-top: .2em solid var(--Cyan);
+        border-radius: .3em;
+        box-shadow: hsla(246, 87%, 43%, 0.137) 0px 20px 25px -5px, hsla(253, 81%, 43%, 0.04) 0px 10px 10px -5px;
+
+        .heading-title {
+            margin-bottom: .5em;
+            font-size: 1em;
+            color: var(--Very-Dark-Blue);
+            font-weight: 600;
+        }
+
+        .heading-sub-title {
+            font-size: .6em;
+            max-width: 80%;
+            color: var(--Grayish-Blue);
+            font-weight: 200;
+        }
+
+        img {
+            margin: 2em 1.5em 1.5em 0;
+            width: 3.2em;
+            float: right;
+        }
+    }
+
+    .box1 {
+    
+    }
+
+    .box2 {
+        border-top: .2em solid var(--Red) !important;
+
+    }
+
+    .box3 {
+        border-top: .2em solid var(--Orange) !important;
+
+    }
+
+    .box4 {
+        border-top: .2em solid var(--Blue) !important;
+
+    }
+
 }

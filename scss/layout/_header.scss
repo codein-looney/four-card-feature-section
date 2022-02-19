@@ -1,3 +1,26 @@
 .wrapper .header {
-    border: 1px solid red;
+    margin: 5em 0;
+    font-size: .8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .header-title {
+        font-size: 2.3em;
+        margin-bottom: .5em;
+        color: var(--Grayish-Blue);
+        font-weight: 200;
+
+        span {
+            color: var(--Very-Dark-Blue);
+            font-weight: 600;
+        }
+    }
+
+    .header-sub-title {
+        max-width: 30%;
+        color: var(--Grayish-Blue);
+
+    }
 }
